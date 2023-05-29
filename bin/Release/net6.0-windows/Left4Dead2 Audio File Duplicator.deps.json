@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Left4Dead2 Audio File Duplicator/1.0.0": {
+        "runtime": {
+          "Left4Dead2 Audio File Duplicator.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Left4Dead2 Audio File Duplicator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

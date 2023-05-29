@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Left4Dead2 Audio File Duplicator", "Left4Dead2 Audio File Duplicator.csproj", "{E8E18B30-8D2F-4573-ADA8-B435C5B8BEEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8E18B30-8D2F-4573-ADA8-B435C5B8BEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E18B30-8D2F-4573-ADA8-B435C5B8BEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E18B30-8D2F-4573-ADA8-B435C5B8BEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E18B30-8D2F-4573-ADA8-B435C5B8BEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91B21348-88C2-4C6C-BBD4-33A7A0FEDDB4}
+	EndGlobalSection
+EndGlobal

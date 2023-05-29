@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "l+sgaE0mHFbtoSmkWSJhZWrC36EL0zmFc9cRmMQcNlfmmjb9JJN1PvYxbYX0NM+Le2se4e/6Wp1so84xHsmznQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sebit\\source\\repos\\Left4Dead2 Audio File Duplicator\\Left4Dead2 Audio File Duplicator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebit\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.16\\microsoft.netcore.app.runtime.win-x64.6.0.16.nupkg.sha512",
+    "C:\\Users\\sebit\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.16\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.16.nupkg.sha512",
+    "C:\\Users\\sebit\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.16\\microsoft.aspnetcore.app.runtime.win-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,5 @@
+D:\Left4Dead2 Audio Duplicator\Left4Dead2 Audio File Duplicator.exe
+D:\Left4Dead2 Audio Duplicator\Left4Dead2 Audio File Duplicator.dll
+D:\Left4Dead2 Audio Duplicator\Left4Dead2 Audio File Duplicator.deps.json
+D:\Left4Dead2 Audio Duplicator\Left4Dead2 Audio File Duplicator.runtimeconfig.json
+D:\Left4Dead2 Audio Duplicator\Left4Dead2 Audio File Duplicator.pdb

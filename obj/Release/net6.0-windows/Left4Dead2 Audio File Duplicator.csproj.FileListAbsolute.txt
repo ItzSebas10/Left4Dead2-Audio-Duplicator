@@ -15,3 +15,20 @@ C:\Users\sebit\source\repos\Left4Dead2 Audio File Duplicator\obj\Release\net6.0-
 C:\Users\sebit\source\repos\Left4Dead2 Audio File Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.pdb
 C:\Users\sebit\source\repos\Left4Dead2 Audio File Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.genruntimeconfig.cache
 C:\Users\sebit\source\repos\Left4Dead2 Audio File Duplicator\obj\Release\net6.0-windows\ref\Left4Dead2 Audio File Duplicator.dll
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\bin\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.exe
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\bin\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.deps.json
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\bin\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.runtimeconfig.json
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\bin\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.dll
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\bin\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.pdb
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.csproj.AssemblyReference.cache
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2_Audio_File_Duplicator.Form1.resources
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.csproj.GenerateResource.cache
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.AssemblyInfoInputs.cache
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.AssemblyInfo.cs
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.csproj.CoreCompileInputs.cache
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.dll
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\refint\Left4Dead2 Audio File Duplicator.dll
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.pdb
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\Left4Dead2 Audio File Duplicator.genruntimeconfig.cache
+C:\Users\sebit\Source\Repos\ItzSebas10\Left4Dead2-Audio-Duplicator\obj\Release\net6.0-windows\ref\Left4Dead2 Audio File Duplicator.dll

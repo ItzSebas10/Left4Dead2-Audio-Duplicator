@@ -40,11 +40,13 @@
             txtNuevoNombre = new TextBox();
             lblNombreArchivo = new Label();
             label5 = new Label();
+            checkLetras = new CheckBox();
+            checkDir = new CheckBox();
             SuspendLayout();
             // 
             // abrirSonidoBtn
             // 
-            abrirSonidoBtn.Location = new Point(446, 31);
+            abrirSonidoBtn.Location = new Point(448, 19);
             abrirSonidoBtn.Name = "abrirSonidoBtn";
             abrirSonidoBtn.Size = new Size(153, 51);
             abrirSonidoBtn.TabIndex = 0;
@@ -71,7 +73,7 @@
             // 
             // duplicarBtn
             // 
-            duplicarBtn.Location = new Point(446, 111);
+            duplicarBtn.Location = new Point(448, 110);
             duplicarBtn.Name = "duplicarBtn";
             duplicarBtn.Size = new Size(153, 47);
             duplicarBtn.TabIndex = 3;
@@ -132,18 +134,41 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(479, 176);
+            label5.Location = new Point(481, 206);
             label5.Name = "label5";
             label5.Size = new Size(149, 20);
             label5.TabIndex = 10;
             label5.Text = "© Coded by ItzSebas";
+            // 
+            // checkLetras
+            // 
+            checkLetras.AutoSize = true;
+            checkLetras.Location = new Point(22, 190);
+            checkLetras.Name = "checkLetras";
+            checkLetras.Size = new Size(170, 24);
+            checkLetras.TabIndex = 11;
+            checkLetras.Text = "Utilizar letras (a, b, c)";
+            checkLetras.UseVisualStyleBackColor = true;
+            // 
+            // checkDir
+            // 
+            checkDir.AutoSize = true;
+            checkDir.Location = new Point(448, 163);
+            checkDir.Name = "checkDir";
+            checkDir.Size = new Size(156, 24);
+            checkDir.TabIndex = 12;
+            checkDir.Text = "Recordar dirección";
+            checkDir.UseVisualStyleBackColor = true;
+            checkDir.CheckedChanged += checkDir_CheckedChanged;
             // 
             // Form1
             // 
             AllowDrop = true;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(631, 200);
+            ClientSize = new Size(631, 235);
+            Controls.Add(checkDir);
+            Controls.Add(checkLetras);
             Controls.Add(label5);
             Controls.Add(lblNombreArchivo);
             Controls.Add(txtNuevoNombre);
@@ -178,5 +203,7 @@
         private TextBox txtNuevoNombre;
         private Label label5;
         private Label lblNombreArchivo;
+        private CheckBox checkLetras;
+        private CheckBox checkDir;
     }
 }

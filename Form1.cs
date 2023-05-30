@@ -5,11 +5,14 @@ namespace Left4Dead2_Audio_File_Duplicator
     public partial class Form1 : Form
     {
         private string rutaArchivoOriginal;
-        private string nuevoNombre;
+        private string carpetaDestino;
+        private bool recordarUbicacion = false;
         public Form1()
         {
             InitializeComponent();
             duplicarBtn.Enabled = false;
+            checkDir.Enabled = false;
+            checkLetras.Enabled = false;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -30,6 +33,8 @@ namespace Left4Dead2_Audio_File_Duplicator
                 lblNombreArchivo.Text = nombreArchivo;
                 MessageBox.Show("Archivo de audio seleccionado.");
                 duplicarBtn.Enabled = true;
+                checkDir.Enabled = true;
+                checkLetras.Enabled = true;
             }
         }
 
@@ -49,48 +54,70 @@ namespace Left4Dead2_Audio_File_Duplicator
 
             string extensionArchivoOriginal = Path.GetExtension(rutaArchivoOriginal);
 
-            nuevoNombre = txtNuevoNombre.Text.Trim();
+            string nuevoNombre = txtNuevoNombre.Text.Trim();
             int inicio = int.Parse(txtInicio.Text);
             int fin = int.Parse(txtFin.Text);
 
-            // Solicitar una nueva ubicación para guardar las copias
-            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-            DialogResult result = folderBrowserDialog.ShowDialog();
-
-            if (result == DialogResult.OK)
+            if (!recordarUbicacion || string.IsNullOrEmpty(carpetaDestino))
             {
-                string directorioDestino = folderBrowserDialog.SelectedPath;
+                FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+                DialogResult result = folderBrowserDialog.ShowDialog();
 
-                for (int i = inicio; i <= fin; i++)
+                if (result == DialogResult.OK)
                 {
-                    string nuevoNombreCompleto = $"{nuevoNombre}{i.ToString("D2")}{extensionArchivoOriginal}";
-                    string rutaArchivoDestino = Path.Combine(directorioDestino, nuevoNombreCompleto);
+                    carpetaDestino = folderBrowserDialog.SelectedPath;
+                }
+                else
+                {
+                    return; // Cancelar la operación si no se selecciona una carpeta
+                }
+            }
 
-                    if (File.Exists(rutaArchivoDestino))
-                    {
-                        DialogResult overwriteResult = MessageBox.Show($"El archivo {nuevoNombreCompleto} ya existe en la ubicación destino. ¿Desea sobrescribirlo?", "Archivo existente", MessageBoxButtons.YesNoCancel);
+            for (int i = inicio; i <= fin; i++)
+            {
+                string nuevoNombreCompleto;
 
-                        if (overwriteResult == DialogResult.Yes)
-                        {
-                            File.Copy(rutaArchivoOriginal, rutaArchivoDestino, true);
-                        }
-                        else if (overwriteResult == DialogResult.No)
-                        {
-                            continue; // Omitir la copia y pasar al siguiente archivo
-                        }
-                        else if (overwriteResult == DialogResult.Cancel)
-                        {
-                            break; // Detener el proceso de duplicación
-                        }
-                    }
-                    else
-                    {
-                        File.Copy(rutaArchivoOriginal, rutaArchivoDestino);
-                    }
+                if (checkLetras.Checked)
+                {
+                    char letra = (char)(i + 96); // 1a, 1b, 1c,...
+                    nuevoNombreCompleto = $"{nuevoNombre}{letra}{extensionArchivoOriginal}";
+                }
+                else
+                {
+                    nuevoNombreCompleto = $"{nuevoNombre}{i.ToString("D2")}{extensionArchivoOriginal}";
                 }
 
-                MessageBox.Show("Copias completadas.");
+                string rutaArchivoDestino = Path.Combine(carpetaDestino, nuevoNombreCompleto);
+
+                if (File.Exists(rutaArchivoDestino))
+                {
+                    DialogResult overwriteResult = MessageBox.Show($"El archivo {nuevoNombreCompleto} ya existe en la ubicación destino. ¿Desea sobrescribirlo?", "Archivo existente", MessageBoxButtons.YesNoCancel);
+
+                    if (overwriteResult == DialogResult.Yes)
+                    {
+                        File.Copy(rutaArchivoOriginal, rutaArchivoDestino, true);
+                    }
+                    else if (overwriteResult == DialogResult.No)
+                    {
+                        continue; // Omitir la copia y pasar al siguiente archivo
+                    }
+                    else if (overwriteResult == DialogResult.Cancel)
+                    {
+                        break; // Detener el proceso de duplicación
+                    }
+                }
+                else
+                {
+                    File.Copy(rutaArchivoOriginal, rutaArchivoDestino);
+                }
             }
+
+            MessageBox.Show("Copias completadas.");
+        }
+
+        private void checkDir_CheckedChanged(object sender, EventArgs e)
+        {
+            recordarUbicacion = checkDir.Checked;
         }
     }
 }

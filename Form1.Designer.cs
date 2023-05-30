@@ -38,7 +38,6 @@
             label3 = new Label();
             label4 = new Label();
             txtNuevoNombre = new TextBox();
-            lblNombreArchivo = new Label();
             label5 = new Label();
             checkLetras = new CheckBox();
             checkDir = new CheckBox();
@@ -46,7 +45,7 @@
             // 
             // abrirSonidoBtn
             // 
-            abrirSonidoBtn.Location = new Point(448, 19);
+            abrirSonidoBtn.Location = new Point(448, 28);
             abrirSonidoBtn.Name = "abrirSonidoBtn";
             abrirSonidoBtn.Size = new Size(153, 51);
             abrirSonidoBtn.TabIndex = 0;
@@ -123,14 +122,6 @@
             txtNuevoNombre.Size = new Size(174, 27);
             txtNuevoNombre.TabIndex = 8;
             // 
-            // lblNombreArchivo
-            // 
-            lblNombreArchivo.AutoSize = true;
-            lblNombreArchivo.Location = new Point(404, 74);
-            lblNombreArchivo.Name = "lblNombreArchivo";
-            lblNombreArchivo.Size = new Size(0, 20);
-            lblNombreArchivo.TabIndex = 9;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -170,7 +161,6 @@
             Controls.Add(checkDir);
             Controls.Add(checkLetras);
             Controls.Add(label5);
-            Controls.Add(lblNombreArchivo);
             Controls.Add(txtNuevoNombre);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -202,7 +192,6 @@
         private Label label4;
         private TextBox txtNuevoNombre;
         private Label label5;
-        private Label lblNombreArchivo;
         private CheckBox checkLetras;
         private CheckBox checkDir;
     }

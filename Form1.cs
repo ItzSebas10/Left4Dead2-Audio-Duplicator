@@ -30,7 +30,7 @@ namespace Left4Dead2_Audio_File_Duplicator
             {
                 rutaArchivoOriginal = openFileDialog.FileName;
                 string nombreArchivo = Path.GetFileName(rutaArchivoOriginal);
-                lblNombreArchivo.Text = nombreArchivo;
+                abrirSonidoBtn.Text = nombreArchivo;
                 MessageBox.Show("Archivo de audio seleccionado.");
                 duplicarBtn.Enabled = true;
                 checkDir.Enabled = true;

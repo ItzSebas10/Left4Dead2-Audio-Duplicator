@@ -77,6 +77,8 @@ namespace Left4Dead2_Audio_File_Duplicator
 
             string formatoNumerico = checkEnumeracionAlternativa.Checked ? "D2" : string.Empty;
 
+            bool copiasRealizadas = false; // Variable para rastrear si se han realizado copias
+
             for (int i = inicio; i <= fin; i++)
             {
                 string nuevoNombreCompleto;
@@ -100,6 +102,7 @@ namespace Left4Dead2_Audio_File_Duplicator
                     if (overwriteResult == DialogResult.Yes)
                     {
                         File.Copy(rutaArchivoOriginal, rutaArchivoDestino, true);
+                        copiasRealizadas = true; // Se ha realizado una copia
                     }
                     else if (overwriteResult == DialogResult.No)
                     {
@@ -113,10 +116,14 @@ namespace Left4Dead2_Audio_File_Duplicator
                 else
                 {
                     File.Copy(rutaArchivoOriginal, rutaArchivoDestino);
+                    copiasRealizadas = true; // Se ha realizado una copia
                 }
             }
 
-            MessageBox.Show("Copias completadas.");
+            if (copiasRealizadas)
+            {
+                MessageBox.Show("Copias completadas.");
+            }
         }
 
         private void checkDir_CheckedChanged(object sender, EventArgs e)

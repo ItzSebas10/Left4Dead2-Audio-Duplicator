@@ -13,6 +13,7 @@ namespace Left4Dead2_Audio_File_Duplicator
             duplicarBtn.Enabled = false;
             checkDir.Enabled = false;
             checkLetras.Enabled = false;
+            checkEnumeracionAlternativa.Enabled = false;
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
@@ -35,6 +36,7 @@ namespace Left4Dead2_Audio_File_Duplicator
                 duplicarBtn.Enabled = true;
                 checkDir.Enabled = true;
                 checkLetras.Enabled = true;
+                checkEnumeracionAlternativa.Enabled = true;
             }
         }
 
@@ -73,6 +75,8 @@ namespace Left4Dead2_Audio_File_Duplicator
                 }
             }
 
+            string formatoNumerico = checkEnumeracionAlternativa.Checked ? "D2" : string.Empty;
+
             for (int i = inicio; i <= fin; i++)
             {
                 string nuevoNombreCompleto;
@@ -84,7 +88,7 @@ namespace Left4Dead2_Audio_File_Duplicator
                 }
                 else
                 {
-                    nuevoNombreCompleto = $"{nuevoNombre}{i.ToString("D2")}{extensionArchivoOriginal}";
+                    nuevoNombreCompleto = $"{nuevoNombre}{i.ToString(formatoNumerico)}{extensionArchivoOriginal}";
                 }
 
                 string rutaArchivoDestino = Path.Combine(carpetaDestino, nuevoNombreCompleto);

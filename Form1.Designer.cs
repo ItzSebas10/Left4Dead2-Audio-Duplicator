@@ -41,11 +41,12 @@
             label5 = new Label();
             checkLetras = new CheckBox();
             checkDir = new CheckBox();
+            checkEnumeracionAlternativa = new CheckBox();
             SuspendLayout();
             // 
             // abrirSonidoBtn
             // 
-            abrirSonidoBtn.Location = new Point(448, 28);
+            abrirSonidoBtn.Location = new Point(415, 28);
             abrirSonidoBtn.Name = "abrirSonidoBtn";
             abrirSonidoBtn.Size = new Size(153, 51);
             abrirSonidoBtn.TabIndex = 0;
@@ -57,7 +58,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 28F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(1, 9);
             label1.Name = "label1";
             label1.Size = new Size(380, 62);
             label1.TabIndex = 1;
@@ -72,7 +73,7 @@
             // 
             // duplicarBtn
             // 
-            duplicarBtn.Location = new Point(448, 110);
+            duplicarBtn.Location = new Point(415, 110);
             duplicarBtn.Name = "duplicarBtn";
             duplicarBtn.Size = new Size(153, 47);
             duplicarBtn.TabIndex = 3;
@@ -82,7 +83,7 @@
             // 
             // txtFin
             // 
-            txtFin.Location = new Point(256, 145);
+            txtFin.Location = new Point(256, 148);
             txtFin.Name = "txtFin";
             txtFin.Size = new Size(44, 27);
             txtFin.TabIndex = 4;
@@ -125,7 +126,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(481, 206);
+            label5.Location = new Point(429, 211);
             label5.Name = "label5";
             label5.Size = new Size(149, 20);
             label5.TabIndex = 10;
@@ -144,7 +145,7 @@
             // checkDir
             // 
             checkDir.AutoSize = true;
-            checkDir.Location = new Point(448, 163);
+            checkDir.Location = new Point(415, 163);
             checkDir.Name = "checkDir";
             checkDir.Size = new Size(156, 24);
             checkDir.TabIndex = 12;
@@ -152,12 +153,24 @@
             checkDir.UseVisualStyleBackColor = true;
             checkDir.CheckedChanged += checkDir_CheckedChanged;
             // 
+            // checkEnumeracionAlternativa
+            // 
+            checkEnumeracionAlternativa.AutoSize = true;
+            checkEnumeracionAlternativa.Location = new Point(200, 190);
+            checkEnumeracionAlternativa.Name = "checkEnumeracionAlternativa";
+            checkEnumeracionAlternativa.RightToLeft = RightToLeft.No;
+            checkEnumeracionAlternativa.Size = new Size(172, 24);
+            checkEnumeracionAlternativa.TabIndex = 13;
+            checkEnumeracionAlternativa.Text = "Enumeración 01, 02,...";
+            checkEnumeracionAlternativa.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AllowDrop = true;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(631, 235);
+            ClientSize = new Size(584, 235);
+            Controls.Add(checkEnumeracionAlternativa);
             Controls.Add(checkDir);
             Controls.Add(checkLetras);
             Controls.Add(label5);
@@ -194,5 +207,6 @@
         private Label label5;
         private CheckBox checkLetras;
         private CheckBox checkDir;
+        private CheckBox checkEnumeracionAlternativa;
     }
 }
